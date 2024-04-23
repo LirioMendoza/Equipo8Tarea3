@@ -1,7 +1,11 @@
-@media only screen and (max-width : 992px) {
-    header, main, footer {
-        padding-left: 0;
-    }
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.wide-dropdown {
+    width: 300px !important; 
 }
 
 .container .row {

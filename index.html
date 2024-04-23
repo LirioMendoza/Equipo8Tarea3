@@ -10,28 +10,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-wrapper blue darken-3">
-                <div class="container">
-                    <a href="#" class="brand-logo">Seguridad Informática Básica</a>
-                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="#Inicio">Inicio</a></li>
-                        <li><a href="#Temas">Temas</a></li>
-                        <li><a href="#Referencias">Referencias</a></li>
-                        <li><a href="#Info">¿Quienes somos?</a></li>                        
-                    </ul>
+    <nav>
+        <div class="nav-wrapper blue darken-3">
+            <div class="container">
+                <a href="#" class="brand-logo">Seguridad Informática Básica</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li>
+                        <a class="dropdown-trigger" href="#!" data-target="dropdown1">Temas</a>
+                        
+                        <ul id="dropdown1" class="dropdown-content wide-dropdown">
+                            <li><a href="#Tema1">Metasploit</a></li>
+                            <li><a href="#Tema2">Metodología OSSTMM v3</a></li>
+                            <li><a href="#Tema3">Pentesting</a></li>
+                            <li><a href="#Tema4">Robo de identidad</a></li>
+                            <li><a href="#Tema5">Ataques a firewalls</a></li>
+                            <li><a href="#Tema6">Engaño a detectores de intrusos</a></li>
+                            <li><a href="#Tema7">Ataques a contraseñas</a></li>
+                            <li><a href="#Tema8">Debilidades de los protocolos de red</a></li>
+                            <li><a href="#Tema9">Fingerprinting</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Referencias">Referencias</a></li>
+                    <li><a href="#Info">¿Quienes somos?</a></li>                        
+                </ul>
                 </div>
             </div>
-        </nav>
-    </header>
+    </nav>
+    
 
     <main>
         <div class="container">
             <div class="row">
                 <!-- Post #1 -->
-                <div class="col s12 m12 l8 offset-l2 post-snippet">
+                <div class="col s12 m12 l8 offset-l2 post-snippet" id="Tema1">
                     <h4>Metasploit</h4>
                     <img src="img/p1-1.png" alt="Imagen Principal" class="responsive-img"> 
                     <p class="flow-text">Metasploit es uno de los frameworks más populares y completos utilizados para probar la seguridad de los sistemas informáticos, 
@@ -74,7 +87,7 @@
                     </div>
                 </div>
                 <!-- Post #2 -->
-                <div class="col s12 m12 l8 offset-l2 post-snippet">
+                <div class="col s12 m12 l8 offset-l2 post-snippet" id="Tema2">
                     <h4>Metodología OSSTMM v3</h4>
                     <img src="img/p2-1.png" alt="Imagen Principal" class="responsive-img"> 
                     <p class="flow-text">La metodología OSSTMM es un manual para pruebas de seguridad que se basa estrictamente en una metodología científica.</p>
@@ -121,7 +134,7 @@
                     </div>
                 </div>
                 <!-- Post #3 -->
-                <div class="col s12 m12 l8 offset-l2 post-snippet">
+                <div class="col s12 m12 l8 offset-l2 post-snippet" id="Tema1">
                     <h4>Pentesting</h4>
                     <img src="img/p3-1.png" alt="Imagen Principal" class="responsive-img"> 
                     <p class="flow-text">El pentesting es un proceso de evaluación de la seguridad informática en el cual un 
@@ -156,7 +169,7 @@
                     </div>
                 </div>
                 <!-- Post #4 -->
-                <div class="col s12 m12 l8 offset-l2 post-snippet">
+                <div class="col s12 m12 l8 offset-l2 post-snippet" id="Tema4">
                     <h4>Robo de identidad</h4>
                     <img src="img/p4-1.png" alt="Imagen Principal" class="responsive-img"> 
                     <p class="flow-text">El robo de identidad o usurpación de identidad, es cuando una persona obtiene, transfiere, utiliza o se 
@@ -195,7 +208,7 @@
                     </div>
                 </div>
                 <!-- Post #5 -->
-                <div class="col s12 m12 l8 offset-l2 post-snippet">
+                <div class="col s12 m12 l8 offset-l2 post-snippet" id="Tema5">
                     <h4>Ataques a firewalls</h4>
                     <img src="img/p5-1.png" alt="Imagen Principal" class="responsive-img"> 
                     <p class="flow-text">Un firewall es un sistema de seguridad de red el cual monitorea el tráfico de datos que entra y sale de una red. 
@@ -243,7 +256,7 @@
                     </div>
                 </div>
                 <!-- Post #6 -->
-                <div class="col s12 m12 l8 offset-l2 post-snippet">
+                <div class="col s12 m12 l8 offset-l2 post-snippet" id="Tema6">
                     <h4>Engaño a detectores de intrusos</h4>
                     <img src="img/p6-1.webp" alt="Imagen Principal" class="responsive-img"> 
                     <p class="flow-text">Los ataques de evasión o engaño a los sistemas de prevención y detección de intrusos (IPS/IDS) son intentos maliciosos de eludir las medidas 
@@ -277,7 +290,7 @@
                     </div>
                 </div>
                 <!-- Post #7 -->
-                <div class="col s12 m12 l8 offset-l2 post-snippet">
+                <div class="col s12 m12 l8 offset-l2 post-snippet" id="Tema7">
                     <h4>Ataques a contraseñas</h4>
                     <img src="img/p7-1.webp" alt="Imagen Principal" class="responsive-img"> 
                     <p class="flow-text">Los ataques a contraseñas son intentos maliciosos de robar, adivinar o cambiar las contraseñas de los usuarios, ya sea de una 
@@ -310,7 +323,7 @@
                     </div>
                 </div>
                 <!-- Post #8 -->
-                <div class="col s12 m12 l8 offset-l2 post-snippet">
+                <div class="col s12 m12 l8 offset-l2 post-snippet" id="Tema8">
                     <h4>Debilidades de los protocolos de red</h4>
                     <img src="img/p8-1.webp" alt="Imagen Principal" class="responsive-img"> 
                     <p class="flow-text">Los protocolos de red [...] no siempre fueron diseñados 
@@ -350,7 +363,7 @@
                     </div>
                 </div>
                 <!-- Post #9 -->
-                <div class="col s12 m12 l8 offset-l2 post-snippet">
+                <div class="col s12 m12 l8 offset-l2 post-snippet" id="Tema9">
                     <h4>Fingerprinting</h4>
                     <img src="img/p9-1.jpg" alt="Imagen Principal" class="responsive-img"> 
                     <p class="flow-text">El fingerprinting se refiere a la recopilación de un conjunto de datos que sirve para identificar protocolos de red, sistemas operativos 
@@ -386,6 +399,38 @@
                 </div>
             </div>
         </div>
+
+        <div class="references" id="Referencias">
+            <div class="container">
+                <h5>Referencias</h5>
+                <ul>
+                    <li>Cilleruelo, C. (2024a, abril 18). ¿Qué es Metasploit? | KeepCoding Bootcamps. KeepCoding Bootcamps. <a href="https://keepcoding.io/blog/que-es-metasploit-ciberseguridad/">https://keepcoding.io/blog/que-es-metasploit-ciberseguridad/</a></li>
+                    <li>Thug Honeyclient: Atrapando sitios web maliciosos. (s. f.). <a href=" https://revista.seguridad.unam.mx/print/2646"> https://revista.seguridad.unam.mx/print/2646</a></li>
+                    <li>Conzultek. (s. f.). ¿Por qué es necesario el firewall en entornos corporativos? <a href="https://blog.conzultek.com/ciberseguridad/firewall-en-entornos-corporativos">https://blog.conzultek.com/ciberseguridad/firewall-en-entornos-corporativos</a></li>
+                    <li>¿Qué es un sistema de detección de intrusiones (IDS)?| IBM. (s. f.). <a href="https://www.ibm.com/mx-es/topics/intrusion-detection-system">https://www.ibm.com/mx-es/topics/intrusion-detection-system</a></li>
+                    <li>Ciberseg. (2021, 29 junio). ¿Qué es OSSTMM? Definición, historia y características. Ciberseguridad. <a href="https://ciberseguridad.com/guias/desarrollo-seguro/osstmm/">https://ciberseguridad.com/guias/desarrollo-seguro/osstmm/</a></li>
+                    <li>Figeczky, B. (2022, 6 enero). Comparative analysis of OSSTMM v3 and OWASP 4.0 - Boris Figeczky - Medium. Medium. <a href="https://boris-figeczky.medium.com/comparative-analysis-of-osstmm-v3-and-owasp-4-0-e3ae1bf95e9e">https://boris-figeczky.medium.com/comparative-analysis-of-osstmm-v3-and-owasp-4-0-e3ae1bf95e9e</a></li>
+                    <li>DragoN. (2020, 20 octubre). OSSTMM (Open Source Security Testing Methodology Manual) 3.0. DragonJAR - Servicios de Seguridad Informática. <a href="https://www.dragonjar.org/osstmm-open-source-security-testing-methodology-manual-3-0.xhtml">https://www.dragonjar.org/osstmm-open-source-security-testing-methodology-manual-3-0.xhtml</a></li>
+                    <li>¿Qué es el pentesting? Auditando la seguridad de tus sistemas | Empresas | INCIBE. (s. f.). <a href="https://www.incibe.es/empresas/blog/el-pentesting-auditando-seguridad-tus-sistemas">https://www.incibe.es/empresas/blog/el-pentesting-auditando-seguridad-tus-sistemas</a></li>
+                    <li>Villanueva, A. (2021, 25 mayo). Pentest, todo lo que debe saber. OSTEC | Segurança Digital de Resultados. <a href="https://ostec.blog/es/seguridad/pentest-todo-lo-que-debe-saber/">https://ostec.blog/es/seguridad/pentest-todo-lo-que-debe-saber/</a></li>
+                    <li>La Protección y Defensa de los Usuarios de Servicios Financieros, C. N. P. (s. f.). ¿Sabes qué es el Robo de Identidad? gob.mx. <a href="https://www.gob.mx/condusef/articulos/recomendaciones-para-prevenir-el-robo-de-identidad">https://www.gob.mx/condusef/articulos/recomendaciones-para-prevenir-el-robo-de-identidad</a></li>
+                    <li>Proofpoint. (2024, 9 abril). Robo de identidad (Identity Theft). Proofpoint.es. <a href="https://www.proofpoint.com/es/threat-reference/identity-theft">https://www.proofpoint.com/es/threat-reference/identity-theft</a></li>
+                    <li>SEON. (2023, 4 agosto). Robo de identidad. SEON.es. <a href="https://seon.io/es/recursos/glosario/que-es-el-robo-de-identidad/">https://seon.io/es/recursos/glosario/que-es-el-robo-de-identidad/</a></li>
+                    <li>Cisco Next Generation Firewall (NGFW) overview. (2023, 10 febrero). [Vídeo]. Cisco. <a href="https://www.cisco.com/c/es_mx/products/security/firewalls/what-is-a-firewall.html#:~:text=Un%20firewall%20es%20un%20dispositivo,durante%20m%C3%A1s%20de%2025%20a%C3%B1os">https://www.cisco.com/c/es_mx/products/security/firewalls/what-is-a-firewall.html#:~:text=Un%20firewall%20es%20un%20dispositivo,durante%20m%C3%A1s%20de%2025%20a%C3%B1os</a></li>
+                    <li>Emb, T. (2024, 3 abril). 10 Common Types of Firewall Attacks. EMB Blogs. <a href="https://blog.emb.global/common-types-of-firewall-attacks/">https://blog.emb.global/common-types-of-firewall-attacks/</a></li>
+                    <li>Radware. (s. f.). ¿Cuál es la diferencia entre los ataques DoS y DDoS? <a href="https://es.radware.com/cyberpedia/ddos-attacks/dos-vs-ddos-attack-what-is-the-difference/">https://es.radware.com/cyberpedia/ddos-attacks/dos-vs-ddos-attack-what-is-the-difference/</a></li>
+                    <li>Secinfos. (2023, 30 enero). IPS/IDS Evasion Attacks: Understanding the Threat and Protecting Your Network. <a href="https://www.linkedin.com/pulse/ipsids-evasion-attacks-understanding-threat-protecting-your-network-">https://www.linkedin.com/pulse/ipsids-evasion-attacks-understanding-threat-protecting-your-network-</a></li>
+                    <li>Trevino, A., & Trevino, A. (2024, 15 febrero). Tipos de ataques a contraseñas. Keeper Security Blog - Cybersecurity News & Product Updates. <a href="https://www.keepersecurity.com/blog/es/2024/01/12/types-of-password-attacks/">https://www.keepersecurity.com/blog/es/2024/01/12/types-of-password-attacks/</a></li>
+                    <li>Cilleruelo, C. (2024, 19 abril). Ataques de contraseña | KeepCoding Bootcamps. KeepCoding Bootcamps. <a href="https://keepcoding.io/blog/ataques-de-contrasena/#:~:text=Los%20ataques%20de%20contrase%C3%B1a%20son,aplicar%20para%20defendernos%20de%20estas">https://keepcoding.io/blog/ataques-de-contrasena/#:~:text=Los%20ataques%20de%20contrase%C3%B1a%20son,aplicar%20para%20defendernos%20de%20estas</a></li>
+                    <li>Gil, M. B. (2024, 8 febrero). Análisis de las Ventajas y Desventajas del Protocolo TCP/IP: Todo lo que necesitas saber. Ventajas y Desventajas Top. <a href="https://ventajasydesventajastop.com/protocolo-tcp-ip-ventajas-y-desventajas/">https://ventajasydesventajastop.com/protocolo-tcp-ip-ventajas-y-desventajas/</a></li>
+                    <li>IBM documentation. (s. f.-d). <a href="https://www.ibm.com/docs/es/aix/7.2?topic=protocol-tcpip-protocols">https://www.ibm.com/docs/es/aix/7.2?topic=protocol-tcpip-protocols</a></li>
+                    <li>Asperis Security. (2024, 14 febrero). Fingerprinting en Ciberseguridad. Asperis Security. <a href="https://www.asperis.es/glosario-ciberseguridad/fingerprint-en-ciberseguridad/">https://www.asperis.es/glosario-ciberseguridad/fingerprint-en-ciberseguridad/</a></li>
+                    <li>Bustelo, G. (2024, 16 febrero). Fingerprinting: el método de recopilación de datos que puede que aún desconozcas. Red Seguridad. <a href="https://www.redseguridad.com/actualidad/fingerprinting-que-es_20240216.html">https://www.redseguridad.com/actualidad/fingerprinting-que-es_20240216.html</a></li>
+                    <li>Lisa Institute. (s. f.). ¿Qué es el fingerprinting o la huella digital de nuestros dispositivos? Lisa Institute.com. <a href="https://www.lisainstitute.com/blogs/blog/que-es-el-fingerprinting-huella-digital-de-nuestros-dispositivos#:~:text=El%20fingerprinting%20o%20la%20huella%20digital%20es%20toda%20aquella%20informaci%C3%B3n,cada%20vez%20que%20lo%20utilizamos">https://www.lisainstitute.com/blogs/blog/que-es-el-fingerprinting-huella-digital-de-nuestros-dispositivos#:~:text=El%20fingerprinting%20o%20la%20huella%20digital%20es%20toda%20aquella%20informaci%C3%B3n,cada%20vez%20que%20lo%20utilizamos</a></li>
+                    <li>Pérez, S. (2021, 17 febrero). ¿Qué es el Fingerprinting o Huella Digital del Dispositivo? Prodat. <a href="https://www.prodat.es/blog/que-es-el-fingerprinting-o-huella-digital-del-dispositivo/">https://www.prodat.es/blog/que-es-el-fingerprinting-o-huella-digital-del-dispositivo/</a></li>
+                </ul>
+            </div>
+        </div>
     </main>
 
     <footer class="page-footer blue darken-3">
@@ -408,5 +453,41 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, {
+                hover: true,  // Activar el despliegue al pasar el ratón
+                coverTrigger: false, // Esto hace que el menú desplegable no cubra el elemento que lo activa
+                inDuration: 300, // Duración de la animación de entrada
+                outDuration: 225 // Duración de la animación de salida
+            });
+        });
+        </script>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Ajusta estos selectores según sea necesario
+                const offset = 60; // Altura de la navbar
+                const anchors = document.querySelectorAll('a[href^="#"]');
+            
+                for (let anchor of anchors) {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault(); // Evita el comportamiento predeterminado
+                        let targetId = this.getAttribute('href');
+                        let targetElement = document.querySelector(targetId);
+            
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - offset,
+                                behavior: 'smooth' // Suaviza el desplazamiento
+                            });
+                        }
+                    });
+                }
+            });
+            </script>
 </body>
 </html>
