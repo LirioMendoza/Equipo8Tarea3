@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es" class="info">
+<head>
+    <meta charset="UTF-8">
+    <title>¿Quiénes Somos?</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper blue darken-3">
+            <div class="container">
+                <a href="#" class="brand-logo">Seguridad Informática Básica</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>
+                        <a class="dropdown-trigger" href="#!" data-target="dropdown1">Temas</a>
+                        
+                        <ul id="dropdown1" class="dropdown-content wide-dropdown">
+                            <li><a href="index.html#Tema1">Metasploit</a></li>
+                            <li><a href="index.html#Tema2">Metodología OSSTMM v3</a></li>
+                            <li><a href="index.html#Tema3">Pentesting</a></li>
+                            <li><a href="index.html#Tema4">Robo de identidad</a></li>
+                            <li><a href="index.html#Tema5">Ataques a firewalls</a></li>
+                            <li><a href="index.html#Tema6">Engaño a detectores de intrusos</a></li>
+                            <li><a href="index.html#Tema7">Ataques a contraseñas</a></li>
+                            <li><a href="index.html#Tema8">Debilidades de los protocolos de red</a></li>
+                            <li><a href="index.html#Tema9">Fingerprinting</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#Referencias">Referencias</a></li>
+                    <li><a href="#Inicio">¿Quienes somos?</a></li>                        
+                </ul>
+                </div>
+            </div>
+    </nav>
+
+    <main class="info">
+        <section id="Inicio">
+            <br>
+            <h2 class="center-align">¿Quiénes Somos?</h2>
+            <br>
+            <br>
+            <!-- Información de los colaboradores -->
+            <article class="center-align">
+                <h5>Equipo 8</h5>
+                <br>
+                <ul>
+                    <li><span class="star">&#9733;</span> Dionicio Serna Marisela            <span class="bold">417006480</span></li>
+                    <li><span class="star">&#9733;</span> González Lorenzo Daniela Michel    <span class="bold">314312817</span></li>
+                    <li><span class="star">&#9733;</span> Martínez Martínez Marisol          <span class="bold">314105543</span></li>
+                    <li><span class="star">&#9733;</span> Mendoza De Los Santos Lirio A      <span class="bold">316135294</span></li>
+                </ul>
+                <br>
+            </article>
+            <br>
+            <article class="center-align">
+                <h5>Seguridad Informática Básica - Grupo 1</h5>
+            </article>
+            <br><br>
+            <article class="center-align">
+                <h5>23 de abril, 2024</h5>
+                <br><br><br><br>
+            </article>
+        </section>
+    </main>
+    <footer class="info page-footer blue darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Seguridad Informática Básica</h5>
+                    <p class="grey-text text-lighten-4">© Hecho en México, 2024</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Enlaces</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html#Inicio">Inicio</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html#Referencias">Referencias</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#Inicio">¿Quienes somos?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, {
+                hover: true,  
+                coverTrigger: false,
+                inDuration: 300, 
+                outDuration: 225 
+            });
+        });
+        </script>
+</body>
+</html>

@@ -4,6 +4,29 @@ nav {
     z-index: 1000;
 }
 
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.presentation-image-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+.presentation-image {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+  }
+
+
 .wide-dropdown {
     width: 300px !important; 
 }
