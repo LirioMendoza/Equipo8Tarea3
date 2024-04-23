@@ -1,0 +1,48 @@
+header, main, footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+.container .row {
+    margin-bottom: 0;
+}
+
+.post-snippet {
+    margin-bottom: 30px;
+}
+
+.toggle-article {
+    display: none;
+}
+
+.full-article {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.toggle-article:checked + label + .full-article {
+    display: block;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+li {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.full-article img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto; 
+}
+
